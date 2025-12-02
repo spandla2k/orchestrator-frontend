@@ -1,6 +1,7 @@
 // const API_BASE = "http://localhost:8000"; // CHANGE TO PRODUCTION URL
 
-const API_BASE = "https://mrs-api.politedune-9da4c3d6.westus3.azurecontainerapps.io";
+// const API_BASE = "https://mrs-api.politedune-9da4c3d6.westus3.azurecontainerapps.io";
+const API_BASE = "/api";
 
 export async function apiRequest(path, options = {}) {
   const token = localStorage.getItem("accessToken");

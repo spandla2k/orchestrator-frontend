@@ -1,6 +1,14 @@
 {
   "navigationFallback": {
     "rewrite": "/index.html",
-    "exclude": ["/assets/*", "/favicon.ico", "/api/*"]
-  }
+    "exclude": ["/assets/*", "/favicon.ico"]
+  },
+  "routes": [
+    {
+      "route": "/api/{*path}",
+      "proxy": {
+        "url": "https://mrs-api.politedune-9da4c3d6.westus3.azurecontainerapps.io/{path}"
+      }
+    }
+  ]
 }
