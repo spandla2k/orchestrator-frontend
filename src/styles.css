@@ -1,0 +1,162 @@
+/* Global */
+body {
+  font-family: Inter, sans-serif;
+  background: #f7f9fc;
+  margin: 0;
+  color: #222;
+}
+
+.loading {
+  padding: 50px;
+  text-align: center;
+  font-size: 18px;
+}
+
+/* Layout */
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 64px;
+  padding: 0 24px;
+  background: #fff;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.topbar-title {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.topbar-right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.topbar-user {
+  font-size: 14px;
+  color: #555;
+}
+
+.btn-secondary {
+  padding: 6px 14px;
+  background: #e5e7eb;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.content {
+  padding: 32px;
+  overflow-y: auto;
+}
+
+/* Card */
+.card {
+  background: white;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Section title */
+.section-title {
+  margin-top: 24px;
+  font-size: 16px;
+  font-weight: 600;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 8px;
+}
+
+/* Item List */
+.items-list {
+  margin-top: 12px;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.item-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.item-title {
+  font-weight: 500;
+}
+
+/* Links */
+.pill {
+  padding: 6px 12px;
+  background: #eef2ff;
+  color: #4338ca;
+  border-radius: 20px;
+  font-size: 13px;
+  text-decoration: none;
+  border: 1px solid #c7d2fe;
+  margin-left: 8px;
+}
+
+.pill:hover {
+  background: #e0e7ff;
+}
+
+/* Debug link */
+.debug-container {
+  margin-top: 20px;
+  text-align: right;
+}
+
+.debug-link {
+  text-decoration: none;
+  color: #2563eb;
+  font-weight: 500;
+}
+
+/* Status Badges */
+.badge {
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-size: 13px;
+  color: #fff;
+  text-transform: capitalize;
+  font-weight: 500;
+}
+
+.badge.small {
+  padding: 3px 8px;
+  font-size: 12px;
+}
+
+/* Status variants */
+.badge-pending {
+  background: #f59e0b;
+}
+.badge-processing {
+  background: #3b82f6;
+}
+.badge-completed {
+  background: #10b981;
+}
+.badge-error {
+  background: #ef4444;
+}
